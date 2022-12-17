@@ -3,20 +3,66 @@
     <head>
         <title>CSS 공부</title>
         <meta charset="utf-8">
+        <style>
+            h1{
+                color: turquoise;
+                font-size: 40px;
+                text-align: center;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            .saw{
+                color: blueviolet;
+            }
+        </style>
     </head>
     
     <body>
        <h1>CSS</h1>
        <h2>이동할 페이지</h2>
         <ol>
-            <li><a href="1.html">시작 페이지</a></li>
-            <li><a href="3.html">현재 페이지</a></li>
+            <li><a href="1.html" class="saw">시작 페이지</a></li>
+            <li><a href="3.html" style="color: blue; text-decoration: underline;">현재 페이지</a></li>
             <li><a href="2.html">HTML</a></li>
             <li><a href="4.html">자바 스크립트</a></li>
-            <li><a href="index.html">소소한 기록</a></li>
+            <li><a href="index.html" class="saw">소소한 기록</a></li>
         </ol>
         
         <h2>CSS 메모</h2>
-        <p>추후 추가 예정</p>
+        
+        <h3>CSS를 이용한 색깔 바꾸기</h3>
+        <ol>
+            <p>
+                <li>head 태그 안에 <strong>style 태그</strong>를 적기</li>
+                <li>변경할 태그 이름만 쓰고 뒤에 중괄호{} 안에 <u>color:변경할 색상;</u>을 적으면 변경하고자 하는 태그의 폰트 색상이 변경됨</li>
+            </p>
+        </ol>
+        
+        <h3>CSS의 기본 문법</h3>
+        <ol>
+            <p>
+                <li>속성을 이용해서 원하는 디자인을 만들 수 있음</li>
+                <li>HTML의 태그 안에 <strong>style</strong>이라는 속성을 이용해서 그 태그의 디자인만 변경할 수 있음</li>
+                <li><u>color:red</u>는 웹 브라우저에선 이 문법이 HTML인지 CSS인지 구분할 수 없음</li>
+                <li>그래서 CSS의 효과를 주고 싶으면 <strong>style</strong>이라는 HTML의 속성 안에 위치한 값이 CSS인지 구분할 수 있게 만듦.</li>
+                <li><strong>선택자</strong> : CSS의 효과를 어떤 태그에 줄 것인지 선택하는 문법</li>
+                <li>이 페이지에선 <u>h1{}</u> 이 부분이 선택자</li>
+                <li>선택자 안에 있는 문법을 <strong>효과</strong>라고 부름</li>
+                <li>태그 안에 속성으로 이용될 때는 선택자를 사용할 필요가 없음</li>
+                <li>CSS 태그를 이용할 때는 효과 뒤에는 <strong>무.조.건!</strong> <u>세미콜론 ;</u>을 붙여야 함!</li>
+                <li>style 속성 안에 두 개 이상의 효과를 써야할 때도 세미콜론을 써야함!</li>
+            </p>
+        </ol>
+        
+        <h3>CSS를 이용하는 2가지 방법</h3>
+        <ol>
+            <p>
+                <li><strong>style 태그</strong>를 이용해서 변경할 태그 모두 바꾼다.</li>
+                <li><strong>style 속성</strong>을 이용해서 하나의 태그만 바꾼다.</li>
+            </p>
+        </ol>
+        
     </body>
 </html>
